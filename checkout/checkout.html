@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Chef</title>
+    <link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+    <a href="../chef/chef.html" class="back-button">Back</a>
+    <div class="container">
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+            <div class="form-section">
+                <label for="orderName">Company/Individual Name:</label>
+                <input type="text" id="orderName" name="orderName" required>
+            </div>
+
+            <div class="form-section left-section">
+                <label for="chefName">Chef Name:</label>
+                <input type="text" id="chefName" name="chefName" required>
+
+                <label for="chefOrigin">Chef Origin:</label>
+                <input type="text" id="chefOrigin" name="chefOrigin" required>
+
+                <label for="cuisineType">Cuisine Type:</label>
+                <input type="text" id="cuisineType" name="cuisineType" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="hourlyRate">Hourly Rate:</label>
+                <input type="text" id="hourlyRate" name="hourlyRate" required>
+            </div>
+
+            <div class="form-section right-section">
+                <label for="eventPurpose">Event Purpose:</label>
+                <input type="text" id="eventPurpose" name="eventPurpose" required>
+
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+
+                <label for="eventTime">Event Time:</label>
+                <input type="time" id="eventTime" name="eventTime" required>
+
+                <label for="eventDuration">Event Duration (hours):</label>
+                <input type="number" id="eventDuration" name="eventDuration" required>
+
+                <label for="eventAddress">Event Address:</label>
+                <textarea id="eventAddress" name="eventAddress" rows="4" required></textarea>
+            </div>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        
+    </div>
+
+    <script type="text/javascript" src="checkout.js"></script>
+</body>
+</html>

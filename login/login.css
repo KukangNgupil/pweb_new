@@ -1,0 +1,171 @@
+body {
+  background: url('header2.jpg') center center/cover no-repeat;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  width: 100%;
+  text-align: center; /* Tengahkan teks dan input */
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab-group li {
+  width: 50%;
+  text-align: center;
+}
+
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.tab-group li a:hover {
+  background: #1ab188;
+  color: #fff;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-content > div {
+  display: none;
+  width: 100%;
+}
+
+.tab-content > div.active {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  font-size: 18px; /* Mengurangi ukuran font label */
+}
+
+.field-wrap {
+  position: relative;
+  width: 100%; /* Memastikan field-wrap mengambil lebar maksimum */
+}
+
+/* Tambahkan style untuk memindahkan label ke atas saat input aktif */
+label.active {
+  transform: translateY(-20px);
+  font-size: 14px;
+}
+
+/* Style untuk animasi saat input aktif */
+input:focus + label,
+textarea:focus + label {
+  transform: translateY(-20px);
+  font-size: 8px;
+}
+
+/* Tambahkan style agar tulisan di atas input tidak tumpang tindih */
+.input-wrap {
+  margin-bottom: 30px;
+}
+
+
+input,
+textarea {
+  font-size: 14px; /* Mengurangi ukuran font input */
+  display: block;
+  width: calc(100% - 20px); /* Menyesuaikan lebar input */
+  margin: 15px; /* Menambahkan ruang di sekitar input */
+  padding: 8px;
+  background: none;
+  border: 1px solid #a0b3b0;
+  color: #fff;
+  border-radius: 4px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 4px;
+  padding: 15px 30px; /* Menyesuaikan ukuran tombol */
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #1ab188;
+  color: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background: #159271;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+.forgot a {
+  color: #a0b3b0;
+}
+
+.forgot a:hover {
+  color: #fff;
+}
+
+/* Tambahkan gaya untuk tombol back */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px; /* Sesuaikan ukuran padding sesuai keinginan Anda */
+  font-size: 16px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+  background-color: #1ab188; /* Ganti warna latar belakang sesuai keinginan Anda */
+  color: #fff; /* Ganti warna teks sesuai keinginan Anda */
+  text-decoration: none;
+  border-radius: 4px; /* Untuk membuat sudut yang melengkung pada tombol */
+}
+
+/* Gaya saat tombol back dihover */
+.back-button:hover {
+  background-color: #159271; /* Ganti warna latar belakang saat dihover sesuai keinginan Anda */
+}
+
+
